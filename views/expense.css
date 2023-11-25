@@ -1,0 +1,239 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+     background-color: #986161; 
+
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+#premiumButton,#downloadBtn,#leaderboardbtn
+ {
+    /* padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8dc1b97d; */
+        background: linear-gradient(135deg, #58cf09, #008CBA);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+
+
+    
+}
+
+.premium-user-button {
+    background: linear-gradient(135deg, #58cf09, #008CBA);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+
+}
+
+/* Adjust the modal styling */
+#leaderboardModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #4CAF50;
+
+
+
+    color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 10px solid #171414;
+    max-width: 40%;
+    text-align: center;
+    position: relative; 
+    
+}
+
+#leaderboardList {
+    list-style-type: none;
+    padding: 0;
+}
+#leaderboardList li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Adjust the close button styling */
+#closeLeaderboard {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Adjust the button container styling */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+/* Adjust the table styling */
+table {
+    width: 100%;
+    background-color: #fff;
+    /* border-collapse: collapse; */
+}
+
+
+/* tr {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+} */
+
+td {
+    padding: 10px;
+     border-bottom: 2px solid #ddd; 
+
+}
+
+
+th {
+    padding: 10px;
+    text-align: left;
+    background: linear-gradient(135deg, #525b4d, #f5f6f7);
+    color: white;
+
+
+    /* background-color: #eddcdc; */
+}
+
+/* Adjust the delete button styling */
+.delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+/* Adjust the form styling */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="number"],
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #4c4faf;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.homepage-button,
+#logoutButton {
+
+    background: linear-gradient(135deg, #a1ab9a, #008CBA);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+
+
+}
+
+.homepage-button {
+    margin-right: 10px;
+}
+.leaderboard-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Adjust the leaderboard button styling */
+.leaderboard-button {
+    background-color: #07b6f0;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+.add-expense-button {
+    background: linear-gradient(135deg, hsl(254, 56%, 44%), #3e403f);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Expense</title>
+    <link rel="stylesheet" type="text/css" href="expense.css">
+</head>
+<body>
+    <style>h1 { text-align: center; color: white;
+    } .premium {
+    background-color: rgb(92, 92, 237);
+    color: white;
+    }
+    #premiumuser { color: rgb(175, 78, 78);
+    }</style>
+        <h1>Track Your Expenses</h1>
+        <div class="button-container">
+            <div class="left-side">
+            <button class="premium" id="premiumButton";>Buy Premium</button>
+            <button class="add-button" id="downloadBtn">Download Expense File</button>
+            </div>
+
+            <div class="right-side">
+                <button class="homepage-button">Home Page</button>
+                <button id="logoutButton">LogOut</button>
+        </div> 
+    </div> 
+
+    <div class="leaderboard-container">
+        <a class="leaderboard-button" id="leaderboardbtn" style="display: none;">🏆 Show Leaderboard 🏆</a>
+    </div>
+
+
+    
+
+    <div id="premiumuser"></div>
+
+    <div id="leaderboardModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLeaderboard">&times;</span>
+            <!-- Leaderboard content goes here -->
+            <ul id="leaderboardList"></ul>
+        </div>
+    </div>
+
+    <div class="leaderboard-container">
+        <a class="leaderboard-button" id="leaderboardbtn" style="display: none;">🏆 Show Leaderboard 🏆</a>
+    </div>
+
+    <form action="expense/addexpense" method="POST" id="addExpenseForm">
+        <label for="amount">Enter Expense Amount: </label>
+        <input type="number" id="amount" name="amount" required>
+        <label for="desc">Enter Description: </label>
+        <input type="text" id="desc" name="desc">
+        <label for="cat">Choose A Category:  </label>
+        <select id="cat" name="cat" required>
+            <option value="Miscellaneous">Miscellaneous</option>
+            <option value="Travel">Travel</option>
+            <option value="Grocery">Grocery</option>
+            <option value="Rent">Rent</option>
+            <option value="Entertainment">Entertainment</option>
+        </select>
+        <!-- <input type="submit" value="Add Expense"> -->
+        <button class="add-expense-button" id="addExpenseButton">Add Expense</button>
+
+    </form>
+    <table id="expenseTable">
+        <thead>
+            <tr>
+                <th>Expense Amount</th>
+                <th>Description</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table><br>
+    <label for="pagenumber">Page Views:</label>
+    <select name="pagenumber" id="pagenumber" type="radio" >
+     <option value="5">5</option>
+     <option value="10">10</option>
+     <option value="25">25</option>
+     <option value="50">50</option>
+     <option value="100">100</option>
+    </select>
+            
+
+</body>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+<script src="expense.js"></script>
+</html>
